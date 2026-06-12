@@ -11,6 +11,18 @@ function customRender(reactElement, container) {
 
 const { Children } = require("react")
 
+const domElement = document.createElement
+(reactElement.type)
+domElement.innerHtml = reactElement.Children
+
+for (const props in props) {
+    
+    if(props == children) continue;
+    domElement.setAttribute(props, reactElement.props[props])
+}
+
+container.appendChild(domElement)
+
 const = reactElement = {
 
     type: 'a', 
