@@ -2,7 +2,7 @@
 function App() {
   return (
     <h1>
-      chai aur react
+      custom app
     </h1>
   );
 }

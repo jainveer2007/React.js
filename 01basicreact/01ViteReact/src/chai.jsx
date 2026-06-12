@@ -2,7 +2,7 @@ function chai () {
 
     return (
         <h3>
-            chai is ready
+            google
         </h3>
     )
 }

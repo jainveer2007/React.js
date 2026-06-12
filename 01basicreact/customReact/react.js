@@ -15,9 +15,9 @@ const domElement = document.createElement
 (reactElement.type)
 domElement.innerHtml = reactElement.Children
 
-for (const props in props) {
+for (const props in reactElement.props) {
     
-    if(props == children) continue;
+    if(props === 'children') continue;
     domElement.setAttribute(props, reactElement.props[props])
 }
 
